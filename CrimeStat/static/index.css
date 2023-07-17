@@ -1,0 +1,60 @@
+body {
+    background-image: url(Second.jpg);
+    background-size: cover;
+    background-color: #eee;
+    text-align: center;
+    margin: auto;
+    width: 150px;
+    justify-content: center;
+    
+  }
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+  
+  
+  
+    
+  button {
+      position: absolute;
+    top: 80%;
+    left: 40%;
+      --c: #fff;
+     /* text color */
+      background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+        #eed45f ;
+     /* background color */
+      color: #0000;
+      border: none;
+      transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+      text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+        calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+      outline-offset: .1em;
+      transition: 0.3s;
+    }
+    
+    button:hover,
+    button:focus-visible {
+      --_p: 0%;
+      --_i: 1;
+    }
+    
+    button:active {
+      text-shadow: none;
+      color: var(--c);
+      box-shadow: inset 0 0 9e9q #0005;
+      transition: 0s;
+    }
+    
+    button {
+      font-family: system-ui, sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      margin: 0;
+      cursor: pointer;
+      padding: .1em .3em;
+    }

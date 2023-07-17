@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="static/home.css" />
+  <title>CrimeStat</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+  <div class="states">
+    <select id="dropdown">
+      <option value="option" disabled selected>Select Category</option>
+      <option value="option1">Cyber Crime</option>
+      <option value="option2">Murder</option>
+      <option value="option3">Juveniles</option>
+      <option value="option4">Crimes against Women</option>
+    </select>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="chart" id="delhiChart">
+        <canvas id="delhi" width="300" height="300"></canvas>
+        <div class="graph-info" id="delhigraphInfo"></div>
+      </div>
+      <div class="chart" id="assamChart">
+        <canvas id="assam" width="300" height="300"></canvas>
+        <div class="graph-info" id="assamgraphInfo"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="chart" id="biharChart">
+        <canvas id="bihar" width="300" height="300"></canvas>
+        <div class="graph-info" id="bihargraphInfo"></div>
+      </div>
+      <div class="chart" id="mpChart">
+        <canvas id="mp" width="300" height="300"></canvas>
+        <div class="graph-info" id="mpgraphInfo"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="chart" id="rajasthanChart">
+        <canvas id="rajasthan" width="300" height="300"></canvas>
+        <div class="graph-info" id="rgraphInfo"></div>
+      </div>
+      <div class="chart" id="upChart">
+        <canvas id="up" width="300" height="300"></canvas>
+        <div class="graph-info" id="upgraphInfo"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="chart" id="wbChart">
+        <canvas id="wb" width="300" height="300"></canvas>
+        <div class="graph-info" id="wbgraphInfo"></div>
+      </div>
+      <div class="chart" id="mahaChart">
+        <canvas id="maha" width="300" height="300"></canvas>
+        <div class="graph-info" id="mahagraphInfo"></div>
+      </div>
+    </div>
+    <div class="button1">
+      <button type="button" onclick="window.location.href='report.html'">
+        Report
+      </button>
+    </div>
+    <div class="button2">
+      <button type="button" onclick="window.location.href='index.html'">
+        Home
+      </button>
+    </div>
+  </div>
+
+  <script src="js/Delhi.js"></script>
+  <script src="js/Assam.js"></script>
+  <script src="js/Bihar.js"></script>
+  <script src="js/Madhyapradesh.js"></script>
+  <script src="js/Rajasthan.js"></script>
+  <script src="js/Uttarpradesh.js"></script>
+  <script src="js/Westbengal.js"></script>
+  <script src="js/Maharashtra.js"></script>
+</body>
+
+</html>
