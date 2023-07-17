@@ -27,5 +27,5 @@ To use the CrimeStat application:
 1. Clone the repository:```git clone https://github.com/CrimeStat/CrimeStat.git```
 2. Open ``index.html`` in any browser 
 
-Contributing
+## Contributing
 Contributions to CrimeStat are welcome! If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
